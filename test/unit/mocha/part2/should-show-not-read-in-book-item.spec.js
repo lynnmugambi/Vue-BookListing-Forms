@@ -12,7 +12,7 @@ describe("BookItem.vue", () => {
     const $ = cheerio.load(content);
 
     const firstSpan = $("span");
-    const secondSpan = $("span:nth-child(2n)");
+    const secondSpan = $("span:nth-of-type(2)");
 
     assert(
       $(firstSpan).length > 0,
