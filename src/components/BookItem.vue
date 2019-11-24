@@ -2,6 +2,8 @@
   <li>
     {{book.title}} : {{book.author}}
   </li>
+  <span v-if="book.finishedReading"> Read</span>
+  <span v-if="!book.finishedReading">Not Read</span>
 </template>
 
 <script>
